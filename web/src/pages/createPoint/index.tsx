@@ -7,6 +7,7 @@ import { LeafletMouseEvent } from 'leaflet';
 import api from '../../services/api';
 
 import Dropzone from '../../components/Dropzone';
+import Overlay from '../../components/Overlay';
 
 import './styles.css';
 
@@ -46,6 +47,7 @@ const CreatePoint = () => {
    const [selectedItems, setSelectedItems] = useState<number[]>([]);
    const [selectedPosition, setSelectedPosition] = useState<[number, number]>([0, 0]);
    const [selectedFile, setSelectedFile] = useState<File>();
+   const [registered, setRegistered] = useState(false);
 
    const history = useHistory();
 
@@ -147,13 +149,14 @@ const CreatePoint = () => {
 
       await api.post('points', data);
 
-      alert('Ponto de coleta criado!');
-
-      history.push('/');
+      //alert('Ponto de coleta criado!');
+      setRegistered(true);
    }
 
    return (
       <div id="page-create-point">
+         <Overlay registered={registered}></Overlay>
+
          <header>
             <img src={logo} alt="Ecoleta" />
             <Link to="/">
@@ -203,13 +206,15 @@ const CreatePoint = () => {
                   <span>Selecione o endereço no mapa</span>
                </legend>
 
-               <Map center={initialPosition} zoom={15} onClick={handleMapClick}>
-                  <TileLayer
-                     attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                  ></TileLayer>
-                  <Marker position={selectedPosition}></Marker>
-               </Map>
+               {!registered && (
+                  <Map center={initialPosition} zoom={15} onClick={handleMapClick}>
+                     <TileLayer
+                        attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                     ></TileLayer>
+                     <Marker position={selectedPosition}></Marker>
+                  </Map>
+               )}
 
                <div className="field-group">
                   <div className="field">
