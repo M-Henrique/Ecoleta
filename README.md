@@ -12,8 +12,8 @@
 - [Acknowledgements](#purple_heart-acknowledgments)
 
 ## :clipboard: About the Project
-   <p align="justify">Education can be harsh for numerous reasons: lack of time/interest, bad teachers, raw difficulty... Students many times have to attempt extra hours on a subject or try learning with different educators.<br /><br />
-   Proffy presents itself as a bridge between these two worlds: the scholars in need of extra help, and the tutors (proffys) with knowledge and the will to teach others what they know. Through a detailed schedule system, students can quickly find instructors teaching the subject they want, in the days and hours they want. Providing means of direct contact, connections can be easily estabilished, speeding up the educational process.</p>
+   <p align="justify">Recycling has become essential in modern society. With so much pollution going on and importante matters like global warmth, the correct disposal and treatment of the waste we produce is vital to keep the planet in balance.<br /><br />
+   Ecoleta is a platform that hopes to establish connections between people willing to help the planet, and those who have the resources and objectives to deal with waste.</p>
    
 ## :hammer: Built With
   - [NodeJS](https://nodejs.org/en/)
@@ -23,14 +23,14 @@
   - [SQLite](https://www.sqlite.org/index.html)
   
 ## :rocket: Getting Started
-Proffy is **NOT** a commercial application. The project was developed exclusively with educational intentions and, as such, haven't been published. With that im mind, if you want to run a local instance of the program for testing and curiosity purposes, please follow these steps:
+Ecoleta is **NOT** a commercial application. The project was developed exclusively with educational intentions and, as such, haven't been published. With that im mind, if you want to run a local instance of the program for testing and curiosity purposes, please follow these steps:
 ### :heavy_check_mark: Prerequisites
 All of those must be installed before you try to run the project:
   - [NodeJS](https://nodejs.org/en/download/)
   - [NPM](https://www.npmjs.com/get-npm) - *Auto installed with NodeJS*
   - [Expo](https://expo.io/) - **Must also be installed in your cellphone**
 ### :gear: Installation
-After cloning or downloading the project in your local machine, navigate to `Mobile\src\services\api.js` and change the *baseURL* variable to your respective IP. Once this is done, open the project's folder in your terminal and run the following commands:
+After cloning or downloading the project in your local machine, navigate to `mobile\src\services\api.js`, `server\src\controllers\PointsController.ts` and `server\src\controllers\ItemsController.ts` and change all the *baseURL* variables to your respective IP. Once this is done, open the project's folder in your terminal and run the following commands:
   ```bash
   # Go to server folder
   $ cd server
@@ -39,7 +39,7 @@ After cloning or downloading the project in your local machine, navigate to `Mob
   $ npm install
   
   #Instantiate the local database
-  $npx run migrate:lastest --knexfile knefile.ts
+  $ npx run migrate:lastest --knexfile knefile.ts
   
   # Run the server
   $ npm start
@@ -69,17 +69,15 @@ Wait a moment and the application will open at port :3000. **Open another termin
 Wait a moment and an expo screen will open. Open the Expo app at your cellphone and scan the QR Code now appearing on screen. **Leave this terminal open**.
 
 ## :computer: Usage
-  In the web version of the app, you can choose between "study" and "give classes". In the first case, you will be presented with filters, respective to the subject, week day and hour in which you wish to have your classes. Once you fill those infos, the list of teachers corresponding to the given filters will appear, each containing all of their information, along with their price, and a button to contact the instructor directly. In the second case, a form will be given for your filling, in which all of the already mentioned info must be provided in order to complete the register process.
+  In the web version of the app, you may register new collection points, providing info like location, types of material collected and, of course, ways to contact the responsible directly
   <br />
   
   <img alt="Versão web" src="web/src/assets/prints/EColeta-1.svg">
   
-  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  In the mobile version, you will be prompted with a filter, asking you to provide the city in which you'll be searching for collection points. Once you fulfill that, select the types of material that you're looking to get rid of, and all the points interested in such materials will be presented on the map. Click on them to see details and contact them directly
   
   <img align="left" alt="Pontos no mapa" src="web/src/assets/prints/EColeta-2.png">
   <img align="right" alt="Detalhes do ponto" src="web/src/assets/prints/EColeta-3.svg">
-  
-  In the mobile version, the "give classes" option will merely request you to fill in the form of the web version (feature still to be implemented). The "study" tab will work just like in the web, with the additional option of favoriting teachers.
     
 ## :information_source: License
   This project is under the [MIT](LICENSE.md) license.
