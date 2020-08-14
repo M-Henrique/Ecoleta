@@ -78,6 +78,8 @@ Wait a moment and an expo screen will open. Open the Expo app at your cellphone 
   
   <img align="left" alt="Pontos no mapa" src="web/src/assets/prints/EColeta-2.png">
   <img align="right" alt="Detalhes do ponto" src="web/src/assets/prints/EColeta-3.svg">
+  
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     
 ## :information_source: License
   This project is under the [MIT](LICENSE.md) license.
