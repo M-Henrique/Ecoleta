@@ -72,10 +72,12 @@ Wait a moment and an expo screen will open. Open the Expo app at your cellphone 
   In the web version of the app, you can choose between "study" and "give classes". In the first case, you will be presented with filters, respective to the subject, week day and hour in which you wish to have your classes. Once you fill those infos, the list of teachers corresponding to the given filters will appear, each containing all of their information, along with their price, and a button to contact the instructor directly. In the second case, a form will be given for your filling, in which all of the already mentioned info must be provided in order to complete the register process.
   <br />
   
-  <img align="left" width="30%" height="500" alt="Cadastro Profs" src="web/src/assets/prints/Proffy-Cadastro-Profs.png">
-  <img align="right" width="60%" height="500" alt="Listagem Profs" src="web/src/assets/prints/Proffy-Listagem-Profs.png">
+  <img alt="Versão web" src="web/src/assets/prints/EColeta-1.svg">
   
   <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  
+  <img align="left" alt="Pontos no mapa" src="web/src/assets/prints/EColeta-2.png">
+  <img align="right" alt="Detalhes do ponto" src="web/src/assets/prints/EColeta-3.svg">
   
   In the mobile version, the "give classes" option will merely request you to fill in the form of the web version (feature still to be implemented). The "study" tab will work just like in the web, with the additional option of favoriting teachers.
     
@@ -84,5 +86,5 @@ Wait a moment and an expo screen will open. Open the Expo app at your cellphone 
 ## :email: Contact
   If you like the project and have the interest in contacting me directly, please send an email to [mhenrique.silva408@gmail.com](mhenrique.silva408@gmail.com)
 ## :purple_heart: Acknowledgments
-  This project was developed with the guidance of **Diego Fernandes**, CTO at [Rocketseat](https://rocketseat.com.br/), as product of the "Next Level Week 2" online event.
+  This project was developed with the guidance of **Diego Fernandes**, CTO at [Rocketseat](https://rocketseat.com.br/), as product of the "Next Level Week" online event.
 
