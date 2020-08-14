@@ -69,12 +69,12 @@ Wait a moment and the application will open at port :3000. **Open another termin
 Wait a moment and an expo screen will open. Open the Expo app at your cellphone and scan the QR Code now appearing on screen. **Leave this terminal open**.
 
 ## :computer: Usage
-  In the web version of the app, you may register new collection points, providing info like location, types of material collected and, of course, ways to contact the responsible directly
+  In the web version of the app, you may register new collection points, providing info like location, types of material collected and, of course, ways to contact the responsible directly.
   <br />
   
   <img alt="Versão web" src="web/src/assets/prints/EColeta-1.svg">
   
-  In the mobile version, you will be prompted with a filter, asking you to provide the city in which you'll be searching for collection points. Once you fulfill that, select the types of material that you're looking to get rid of, and all the points interested in such materials will be presented on the map. Click on them to see details and contact them directly
+  In the mobile version, you will be prompted with a filter, asking you to provide the city in which you'll be searching for collection points. Once you fulfill that, select the types of material that you're looking to get rid of, and all the points interested in such materials will be presented on the map. Click on them to see details and contact them directly.
   
   <img align="left" alt="Pontos no mapa" src="web/src/assets/prints/EColeta-2.png">
   <img align="right" alt="Detalhes do ponto" src="web/src/assets/prints/EColeta-3.svg">
