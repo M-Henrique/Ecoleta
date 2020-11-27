@@ -30,7 +30,7 @@ All of those must be installed before you try to run the project:
   - [NPM](https://www.npmjs.com/get-npm) - *Auto installed with NodeJS*
   - [Expo](https://expo.io/) - **Must also be installed in your cellphone**
 ### :gear: Installation
-After cloning or downloading the project in your local machine, navigate to `mobile\src\services\api.js`, `server\src\controllers\PointsController.ts` and `server\src\controllers\ItemsController.ts` and change all the *baseURL* variables to your respective IP. Once this is done, open the project's folder in your terminal and run the following commands:
+After cloning or downloading the project in your local machine, navigate to `mobile\src\services\api.js`, `server\src\controllers\PointsController.ts` and `server\src\controllers\ItemsController.ts` and change all the *baseURL* and *image_url* variables to your respective IP. Once this is done, open the project's folder in your terminal and run the following commands:
   ```bash
   # Go to server folder
   $ cd server
